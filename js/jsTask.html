@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="display"></p>
+    <p id="cour"></p>
+    <p id="disp"></p>
+
+    <script>
+        var name = "Malachy Williams";
+
+        var courses = ["HTML", "CSS", "JavaScript", "PHP"];
+        //Name dispolayed
+        document.getElementById('display').innerHTML = name;
+        //Courses displayed
+        var course = "";
+        var j = 0;
+        for (j = 0; j < courses.length; j++) {
+            course += courses[j] + "<br/>";
+        }
+        document.getElementById('cour').innerHTML = course;
+        //Even numbers from 1-200
+        var i;
+        var text = "";
+        for (i = 0; i <= 200; i = i + 2) {
+            text += i + "<br/>";
+        }
+        document.getElementById('disp').innerHTML = text;
+
+    </script>
+</body>
+
+</html>
