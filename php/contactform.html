@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Contact Me</h3>
+
+    <form action="processform.php" method="post">
+        
+        <div><label for="fname">Firstname:</label><br />
+            <input type="text" name="fname" id="f_name" placeholder="Firstname" required>
+        </div><br />
+
+        <div> <label for="lname">Lastname:</label><br>
+            <input type="text" name="lname" id="l_name" placeholder="Lastname" required>
+        </div><br />
+
+        <div><label for="email">E-mail:</label><br />
+            <input type="email" name="email" id="e_mail" placeholder="email" required>
+        </div><br />
+
+        <label for="message">Message:</label><br />
+        <textarea name="message" id="msg" cols="25" rows="2" value="Type in your message...">
+        </textarea><br />
+
+        <div>
+            <label for="gender">Gender</label><br />
+            <input type="radio" name="gender" value="female" /> Female
+            <input type="radio" name="gender" value="male"/> Male
+        </div><br />
+
+        <div>
+            <input type="checkbox" name="terms" value="selected" required /> By Checking this box you agree to our terms and conditions
+        </div><br/>
+        <input type="submit" value="Send">
+    </form>
+</body>
+
+</html>
