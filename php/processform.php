@@ -14,12 +14,13 @@
     $firstname = $_POST["fname"];
     $lastname = $_POST["lname"];
     $email = $_POST["email"];
+    $department = $_POST['dept'];
     $gender = $_POST["gender"];
     $message = $_POST["message"];
 
     //save into a file
     $myfile = fopen("$firstname.txt", "w") or die("Unable to open file!");
-    $txt = "Firstname :" . $firstname . "\nLastname : " . $lastname . "\nEmail : " . $email . "\nGender : " . $gender . "\nMessage : " . $message;
+    $txt = "Firstname :" . $firstname . "\nLastname : " . $lastname . "\nEmail : " . $email . "\nDepartment : " . $department . "\nGender : " . $gender . "\nMessage : " . $message;
     fwrite($myfile, $txt);
     echo fread($myfile,filesize("$firstname.txt"));
     fclose($myfile);
