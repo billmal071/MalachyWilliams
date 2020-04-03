@@ -26,5 +26,7 @@
     fclose($myfile);
 ?>
 
+<a href="http://localhost/phplessons/contactform.html">click to go to contact form</a>
+
 </body>
 </html>
