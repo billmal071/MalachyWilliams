@@ -19,6 +19,7 @@
 
         function interestCalculator(a) {
             let rate;
+            let interestData = [];
             for (let i = 0; i < data.length; i++) {
                 let principal = data[i].principal; 
                 let time = data[i].time;
@@ -33,11 +34,12 @@
                 }
                 let interest = (principal * rate * time) / 100;
                 console.log("Interest: " + (principal * rate * time) / 100);
-                let interestData = [
+                let newTrk = [
                     {principal: principal , rate: rate, time: time, interest: interest}
                 ];
-                console.log(interestData);
+                interestData.push(newTrk);
             }
+            console.log(interestData);
             return 0;
         }
         interestCalculator(data);
