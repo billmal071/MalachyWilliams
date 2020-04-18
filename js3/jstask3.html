@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 3</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("JS Task 3");
+        function checkDivision(number) {
+            //for (let i = 1; i < number.length; i++) {
+            let data = [];
+            for (let i = number; i >= 1; i--) {
+                //for(let i = 1; i <= number1; i++) {
+                if ((i % 2 == 0) && (i % 3 == 0) && (i % 5 == 0)) {
+                    //console.log("yu-gi-oh");
+                    data.push("yu-gi-oh");
+                } else if ((i % 2 == 0) && (i % 3 == 0)) {
+                    //console.log("yu-gi");
+                    data.push("yu-gi");
+                } else if ((i % 2 == 0) && (i % 5 == 0)) {
+                    //console.log("yu-oh");
+                    data.push("yu-oh");
+                } else if ((i % 3 == 0) && (i % 5 == 0)) {
+                    //console.log("gi-oh");
+                    data.push("gi-oh");
+                } else if (i % 2 == 0) {
+                    //console.log("yu");
+                    data.push("yu");
+                } else if (i % 3 == 0) {
+                    //console.log("gi");
+                    data.push("gi");
+                } else if (i % 5 == 0) {
+                    //console.log("oh");
+                    data.push("oh");
+                } else {
+                    //console.log(i);
+                    data.push(i);
+                }
+                //console.log(i); 
+                //console.log(data);               
+            }
+            console.log(data.reverse());
+            //}
+        }
+
+        checkDivision(100)
+        checkDivision(30)
+        checkDivision(1)
+        checkDivision(6)
+        checkDivision(10)
+        checkDivision(15)
+        checkDivision(4)
+        checkDivision(25)
+    </script>
+</body>
+
+</html>
